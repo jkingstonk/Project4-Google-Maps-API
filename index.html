@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>Simple Map</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script type="module" src="./index.js"></script>
+  </head>
+  <body>
+    <div class="row">
+      <div class="column">
+        <h1>Map Quiz</h1>
+        <p class="question" id="q1">Where is the University Library?</p>
+        <p class="answer" id="a1">Your answer is INCORRECT!</p>
+        <p class="question" id="q2">Where is Sierra Hall?</p>
+        <p class="answer" id="a2">Your answer is INCORRECT!</p>
+        <p class="question" id="q3">Where is Manzanita Hall?</p>
+        <p class="answer" id="a3">Your answer is INCORRECT!</p>
+        <p class="question" id="q4">Where is Eucalyptus Hall?</p>
+        <p class="answer" id="a4">Your answer is INCORRECT!</p>
+        <p class="question" id="q5">Where is the  	
+          Donald Bianchi Planetarium?</p>
+        <p class="answer" id="a5">Your answer is INCORRECT!</p>
+        <h1 id="score">You got X correct!</h1>
+      </div>
+      <div id="map"></div>
+    </div>
+    
+
+    <!-- 
+     The `defer` attribute causes the callback to execute after the full HTML
+     document has been parsed. For non-blocking uses, avoiding race conditions,
+     and consistent behavior across browsers, consider loading using Promises
+     with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+    -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATiOasm81bB1Jp2J5_hQ3Bt9goIdwpXCg&callback=initMap"
+      async
+      defer
+    ></script>
+  </body>
+</html>
